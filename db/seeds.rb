@@ -1,7 +1,7 @@
-require_relative "../models/skill.rb"
-require_relative "../models/user_stat.rb"
-require_relative "../models/user.rb"
-require_relative "../models/stat.rb"
+require_relative "../app/models/skill.rb"
+require_relative "../app/models/user_stat.rb"
+require_relative "../app/models/user.rb"
+require_relative "../app/models/stat.rb"
 
 
 
