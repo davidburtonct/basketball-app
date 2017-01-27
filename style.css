@@ -1,0 +1,40 @@
+.heading {
+	font-family: Arial;
+	color: green;
+}
+.sport {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 20px;
+	margin: 20px;
+	width: 25%;
+	text-align: center;
+	background: #40FF00;
+	font-family: Arial;
+}
+#parent-sport {
+	text-align: center;
+}
+.sport-icon {
+	height: 170px;
+	width: 170px;
+}
+#logo {
+	height: 200px;
+	width: 200px;
+}
+ul{
+	padding-top: 10px;
+}
+li {
+	display: inline;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+nav {
+	background-color: #FF0037;
+	margin-bottom: 25px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 18px;
+}

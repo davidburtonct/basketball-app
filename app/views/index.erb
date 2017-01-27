@@ -1,0 +1,21 @@
+<body>
+<nav>
+	<ul>
+		<% if logged_in? %>
+		<li> welcome <%=current_user.email %></li>
+		<li><a href="/logout">Logout</a></li>
+		<%else %>
+		<li><a href="/login">Login</a></li>
+		<%end %>
+	</ul>
+</nav>
+<% if !logged_in?%>
+<form method="post" action="/signup"> 
+email<input type="text" name="email">
+password<input type="text" name="password">
+birthday<input type="text" name="birthday">
+<button type="submit">submit</button>
+</form>
+<% end %>	
+
+</body>

@@ -1,0 +1,19 @@
+# 			t.integer :free_throws_made
+# 			t.integer :free_throws_attempted
+# 			t.integer :amount_of_time_practiced_in_ball_handeling
+# 			t.integer :how_many_dribbles_you_can_do_in_a_minute
+# 			t.integer :how_many_dribbles_you_can_do_in_a_minute
+# 			t.integer :three_pointers_made
+# 			t.integer :three_pointers_attempted
+# 			t.integer :jump_shots_made 
+# 			t.integer :jump_shots_attempted
+# 			t.integer :layups_made 
+# 			t.integer :layups_attempted
+# 			t.integer :tunovers_made
+# 			t.integer :reach_ins_made
+# 			t.integer :hand_checks_made
+# 			t.integer :blocking_foul_made
+# 			t.integer :stealing_the_ball_made
+# 			t.integer :charges_made
+# 			t.integer :assits	
+

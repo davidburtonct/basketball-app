@@ -1,0 +1,51 @@
+free throw pertenge
+	free throws made
+	free throws attempted
+	Skill.create(:name => "free throw percentage", :level_of_difficulty => 6)
+	Stat.create(:name => "free throws attempted", :skill_id => 1)
+	Stat.create(:name => "free throws made", :skill_id => 1)	
+ballhandeling
+	drills done
+	amount of time practiced in ball handeling
+	weak hand dribbling 
+		how many dribbles you can do in a minute
+	strong hand dribbeling
+		how many dribbles you can do in a minute
+	Skill.create(:name => "ball handeling", :level_of_difficulty => 7)	
+	Stat.create(:name => "number of weak hand dribbles per minute", :skill_id => 2)	
+	Stat.create(:name => "number of strong hand dribbles per minute", :skill_id => 2)
+3 point pertenage 
+	3 pointers made
+	3 pointers attempted
+	Skill.create(:name => "three point percentage", :level_of_difficulty => 10)	
+	Stat.create(:name => "number of three pointers attempted", :skill_id => 4)	
+	Stat.create(:name => "number of three pointers made", :skill_id => 4)	
+mid range pertange
+	jump shots made 
+	jump shots attempted
+	layups made 
+	layups attempted
+	Skill.create(:name => "mid range percentage", :level_of_difficulty => 7)	
+	Stat.create(:name => "jump shots made", :skill_id => 4)	
+	Stat.create(:name => "jump shots attempted", :skill_id => 4)
+	Stat.create(:name => "lay ups  attempted", :skill_id => 4)
+	Stat.create(:name => "lay ups made", :skill_id => 4)
+
+
+illegal_plays
+	tunovers_made
+	reach_in's_made
+	hand_checks_made
+	blocking_foul_made
+	Skill.create(:name => "illegal plays", :level_of_difficulty => 8)	
+	Stat.create(:name => "turnovers", :skill_id => 3)	
+	Stat.create(:name => "reach in's made", :skill_id => 3)
+	Stat.create(:name => "hand checks made", :skill_id => 3)
+	Stat.create(:name => "blocking foul made", :skill_id => 3)	
+heroic_plays
+	stealing the ball made
+	charges made
+	assits
+	Stat.create(:name => "stealing the ball", :skill_id => 1)  
+	Stat.create(:name => "assists", :skill_id => 1) 
+	Stat.create(:name => "charges made", :skill_id => 1) 

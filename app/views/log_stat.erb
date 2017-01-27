@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>App</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="background">
+
+
+
+<form method="post" action="/log_stat">
+	<div>
+		<select id="skill"  name="skill" onChange="showStatQuestions()">
+			<% @skills.each do |skill|%>
+			<option value="<%=skill.name  %>"> 
+			<%=skill.name %></option>
+			<% end %>
+
+		</select>
+		<% @skills.each do |skill|%>
+			<% if skill.name=="heroic plays" %>
+				<div id="heroic_plays"> 
+					<% skill.stats.each do |stat| %>
+		 			<%= stat.name %>
+		 			<input type="text" name="<%=stat.id%>">	
+		 			<% end %>
+		 		</div>
+			<% end %>	
+
+		
+		
+		<% if skill.name=="ball handeling" %>
+			<div id="ballhandeling" class="hide_skill">
+				<% skill.stats.each do |stat| %>
+		 		<%= stat.name %>
+		 		<input type="text" name="<%=stat.id%>">	
+		 		<% end %>
+			</div>
+		<% end %>	
+		
+		
+		<% if skill.name=="illegal plays" %>
+			<div id="illegal_plays" class="hide_skill">
+				<% skill.stats.each do |stat| %>
+		 		<%= stat.name %>
+		 		<input type="text" name="<%=stat.id%>">	
+		 		<% end %>
+			</div> 	
+		<% end %>	
+		
+		
+		<% if skill.name=="three point percentage" %>
+			<div id="three_point_percentage" class="hide_skill">
+				<% skill.stats.each do |stat| %>
+		 		<%= stat.name %>
+		 		<input type="text" name="<%=stat.id%>">	
+		 		<% end %>
+		 	</div>
+		<% end %>	
+		
+		
+		<% if skill.name=="free throw percentage" %>
+			<div id="free_throw_percentage" class="hide_skill">
+				<% skill.stats.each do |stat| %>
+		 		<%= stat.name %>
+		 		<input type="text" name="<%=stat.id%>">	
+		 		<% end %>
+		 	</div>
+		<% end %>	
+		
+		
+		<% if skill.name=="mid range percentage" %>
+			<div id="mid-range_percentage" class="hide_skill">
+				<% skill.stats.each do |stat| %>
+		 		<%= stat.name %>
+		 		<input type="text" name="<%=stat.id%>">	
+		 		<% end %>
+		 	</div>
+		<% end %>
+	<% end %>
+	</div>
+	<button type="submit">submit</button>
+</form>
+</body>
+</html>
+<script type="text/javascript">
+	var skill=document.querySelector("#skill");
+	var heroic = document.querySelector("#heroic_plays");
+	var ballhandeling = document.querySelector("#ballhandeling");
+	var illegal = document.querySelector("#illegal_plays");
+	var threePoint = document.querySelector("#three_point_percentage");
+	var midRange = document.querySelector("#mid-range_percentage");
+	var freeThrows = document.querySelector("#free_throw_percentage");
+	function showStatQuestions(){
+		console.log("here");
+		if (!ballhandeling.classList.contains("hide_skill")){
+			ballhandeling.classList.add("hide_skill")
+		};
+		if (!heroic.classList.contains("hide_skill")){
+			heroic.classList.add("hide_skill")
+		};
+		if (!illegal.classList.contains("hide_skill")){
+			console.log("hiding");
+			illegal.classList.add("hide_skill")
+		};
+		if (!threePoint.classList.contains("hide_skill")){
+			threePoint.classList.add("hide_skill")
+		};
+		if (!midRange.classList.contains("hide_skill")){
+			midRange.classList.add("hide_skill")
+		};
+		if (!freeThrows.classList.contains("hide_skill")){
+			freeThrows.classList.add("hide_skill")
+		};
+		if(skill.value == "ball handeling"){
+			ballhandeling.classList.remove("hide_skill")
+		} else if (skill.value == "heroic plays"){
+			heroic.classList.remove("hide_skill")
+		} else if (skill.value== "illegal plays"){
+			console.log("showing");
+			illegal.classList.remove("hide_skill")
+		} else if (skill.value== "three point percentage"){
+			threePoint.classList.remove("hide_skill")
+		} else if (skill.value== "mid range percentage"){
+			midRange.classList.remove("hide_skill")
+		} else if (skill.value== "free throw percentage"){
+			freeThrows.classList.remove("hide_skill")
+		}
+	};
+</script>

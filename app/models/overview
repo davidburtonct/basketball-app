@@ -1,0 +1,10 @@
+user class - [name, email, pw], sports
+#
+sports -  name, ??
+
+skills - [name, level of difficulty], associated, associated with a sport
+
+game stats - 
+practice stats -  practice time, what drills did, associated with a skill, accociated with a user 
+
+game stats -  stat, associated with a skill, associated

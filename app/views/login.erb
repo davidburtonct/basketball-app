@@ -1,0 +1,18 @@
+<nav>
+	<ul>
+		<% if logged_in? %>
+		<li> welcome <%=current_user.email %></li>
+		<li> <a href="/skills/new"> new skill </a></li>
+		<li><a href="/practicestat/new"> practice stat </a></li>
+		<li><a href="/gamestat/new"> game stat</a> </li>
+		<li><a href="/logout">Logout</a></li>
+		<%else %>
+		<li><a href="/login">Login</a></li>
+		<%end %>
+	</ul>
+</nav>
+<form method="post" action="/login"> 
+email<input type="text" name="email">
+password<input type="text" name="password">
+<button type="submit">submit</button>
+</form>

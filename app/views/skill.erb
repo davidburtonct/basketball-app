@@ -1,0 +1,15 @@
+<nav>
+	<ul>
+		<% if logged_in? %>
+		<li> welcome <%=current_user.email %></li>
+		<li> <a href="/skills/new"> new skill </a></li>
+		<li><a href="/practicestat/new"> practice stat </a></li>
+		<li><a href="/gamestat/new"> game stat</a> </li>
+		<li><a href="/logout">Logout</a></li>
+		<%else %>
+		<li><a href="/login">Login</a></li>
+		<%end %>
+	</ul>
+</nav>
+<h3> <%= @skill.name %> </h3>
+<h3> <%= @skill.level_of_difficulty %> </h3>
