@@ -1,3 +1,10 @@
+require_relative "../models/skill.rb"
+require_relative "../models/user_stat.rb"
+require_relative "../models/user.rb"
+require_relative "../models/stat.rb"
+
+
+
 
 	Skill.create(:name => "free throw percentage", :level_of_difficulty => 6)
 	Stat.create(:name => "free throws attempted", :skill_id => 1)
