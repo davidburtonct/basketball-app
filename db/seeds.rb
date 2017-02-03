@@ -31,7 +31,7 @@ require_relative "../app/models/stat.rb"
 	Stat.create(:name => "hand checks made", :skill_id => 5)
 	Stat.create(:name => "blocking foul made", :skill_id => 5)
 	
-	Skill.create(:name => "heroic", :level_of_difficulty => 10)
+	Skill.create(:name => "heroic plays", :level_of_difficulty => 10)
 	Stat.create(:name => "stealing the ball", :skill_id => 6)  
 	Stat.create(:name => "assists", :skill_id => 6) 
 	Stat.create(:name => "charges made", :skill_id => 6) 
